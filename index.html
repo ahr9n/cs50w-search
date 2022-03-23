@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Search</title>
-</head>
-<body>
-<form action="https://www.google.com/search">
-    <input name="q" type="text">
-    <input type="submit" value="Google Search">
-</form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Google</title>
+        <!-- Using bootstrap (Link for CSS only) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Using drop-in scripts from JsAction Library (https://github.com/google/jsaction) -->
+        <script src="https://www.gstatic.com/jsaction/contract.js"></script>
+        <script src="https://www.gstatic.com/jsaction/dispatcher.js" async></script>
+
+        <div id="top-right" align="right">
+            <form>
+                <input id="btn-change-search-type" type="submit" value="Advanced Search" formaction="advanced-search.html">
+                <input id="btn-change-search-type" type="submit" value="Images" formaction="image-search.html">
+            </form>
+        </div>
+
+        <div class="container-top">
+            <div class="center" align="center">
+                <div id="logo">
+                    <img src="img/google-logo.png" alt="Search Everything!">
+                </div>
+                <form action="https://www.google.com/search">
+                    <div id="input-text">
+                        <input id="exampleFormControlInput1" class="form-control" type="text" name="q">
+                    </div>
+                    <center id="submit-button">
+                        <input class="btn btn-outline-dark" type="submit" name="btnK" value="Google Search">
+                        <input id="lucky" class="btn btn-outline-dark" type="submit" name="btnI" value="I'm Feeling Lucky" aria-label="I'm Feeling Lucky" data-ved="0ahUKEwjkufLx78n2AhX-GrkGHQaOBMwQ19QECA4" jsaction="trigger.kWlxhc">
+                        <!-- <input type="submit" name="btnI"  value="I'm Feeling Lucky"/> -->
+                    </center>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-bottom"></div>
+    </body>
 </html>
