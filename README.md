@@ -1,3 +1,9 @@
+<div align="center">
+ 
+ ![Search Everything!](https://github.com/ahr9n/cs50w-search/blob/master/img/google-logo.png)
+
+</div>
+
 # Search
 Project 0 for CS50’s Web Programming with Python and JavaScript.
 
@@ -19,7 +25,7 @@ The website meets the following requirements:
 * Like Google’s own Advanced Search page, the four options are stacked vertically, and all of the text fields are left aligned.
   * Consistent with Google’s own CSS, the “Advanced Search” button is blue with white text.
   * When the “Advanced Search” button is clicked, the user is taken to the search results page for their given query.
-* Add an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link takes users directly to the first Google search result for the query, bypassing the normal results page.
+* Adding an “I’m Feeling Lucky” button to the main Google Search page. Consistent with Google’s own behavior, clicking this link takes users directly to the first Google search result for the query, bypassing the normal results page.
   * I encountered a redirect notice when using the “I’m Feeling Lucky” button. But, no worries! This is an expected consequence of a security feature implemented by Google.
 * The CSS I wrote resembles Google’s own aesthetics.
 
